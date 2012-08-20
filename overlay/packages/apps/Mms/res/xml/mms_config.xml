@@ -13,6 +13,6 @@
     <int name="recipientLimit">40</int>
     <int name="smsToMmsTextThreshold">4</int>
     <string name="uaProfTagName">Profile</string>
-    <!-- XXX: userAgent? -->
-    <!-- XXX: uaProfUrl? -->
+    <string name="userAgent">LGE-LS855/Android-mms\u0020</string>
+    <string name="uaProfUrl">http://device.sprintpcs.com/LG/LS855/LS855ZVC.rdf</string>
 </mms_config>
