@@ -28,8 +28,7 @@ ro.telephony.default_network=4
 
 ro.telephony.call_ring.multiple=false
 ro.telephony.call_ring.delay=3000
-# Add signalstrength?
-ro.telephony.ril.v3=datacall,skipbrokendatacall,facilitylock,icccardstatus,1
+ro.telephony.ril.v3=signalstrength,skipbrokendatacall,facilitylock,datacall,icccardstatus
 
 ro.cdma.voicemail.number=mine
 
@@ -55,14 +54,14 @@ debug.performance.tuning=1
 #move hyst=0
 
 ## Media config
-media.stagefright.enable-player=true 
-media.stagefright.enable-meta=false 
-media.stagefright.enable-scan=false 
-media.stagefright.enable-http=true 
-media.stagefright.enable-aac=true 
-media.stagefright.enable-qcp=true 
-ro.media.enc.jpeg.quality=100 
-#ro.media.dec.jpeg.memcap=8000000 
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=false
+media.stagefright.enable-scan=false
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+ro.media.enc.jpeg.quality=100
+#ro.media.dec.jpeg.memcap=8000000
 #ro.media.enc.hprof.vid.bps=8000000
 
 #Dynamite tweaks
@@ -71,38 +70,39 @@ pm.sleep_mode=1
 # More accurate touch
 movfilter=40
 move hyst=0
- 
+
 # Faster transfer rate for net connections
 net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
 net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
- 
+
 #Improve Scrolling Build.prop Tweak
 ro.max.fling_velocity=12000
 ro.min.fling_velocity=8000
- 
+
 #Disable_ADB_Notification_Icon
 persist.adb.notify=0
 
-# Disable strict mode flash on display 
-persist.sys.strictmode.visual=false 
+# Disable strict mode flash on display
+persist.sys.strictmode.visual=false
 
 ## Dalvik
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.dexopt-flags=m=y
 #dalvik.vm.dexopt-flags=m=y,u=n
+dalvik.vm.dexopt-data-only=1
 dalvik.vm.execution-mode=int:jit
 
 # USB storage
 sys.usb.state=mass_storage,adb
 persist.sys.usb.config=mass_storage,adb
 
-# BT 
+# BT
 ro.bt.bdaddr_path=/sys/devices/platform/bd_address/bdaddr_if
 
 # Dummy LGE lightsensor
 ro.hardware.respect_als=true
 
-#ro.config.vc_call_vol_steps=15 
+#ro.config.vc_call_vol_steps=15
 #ro.HOME_APP_ADJ=1
 
 ## Unknown/Other
